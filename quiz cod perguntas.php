@@ -84,6 +84,14 @@
                 <input type="radio" name="perg1" value="opt3"/> 5 <br/>
                 <input type="radio" name="perg1" value="opt4"/> 9 <br/>
             </p>
+            <!--teste-->
+            <p>
+                <label>10- Qual o número mínimo de jogadores em cada time numa partida de futebol?</label><br/>
+                <input type="radio" name="perg1" value="opt1"/> 8 <br/>
+                <input type="radio" name="perg1" value="opt2"/> 7 <br/>
+                <input type="radio" name="perg1" value="opt3"/> 5 <br/>
+                <input type="radio" name="perg1" value="opt4"/> 9 <br/>
+            </p>
         </article>
     </form>
 </body>
