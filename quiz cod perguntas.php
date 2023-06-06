@@ -22,7 +22,7 @@
                 <input type="radio" name="perg1" value="opt4"/> Cinco <br/>
             </p>
             <p>
-                <label>2- Quais o menor e o maior país do mundo? </label><br/>
+                <label>2- Qual o menor e o maior país do mundo? </label><br/>
                 <input type="radio" name="perg1" value="opt1"/> Vaticano e Rússia <br/>
                 <input type="radio" name="perg1" value="opt2"/> Nauru e China <br/>
                 <input type="radio" name="perg1" value="opt3"/> Mônaco e Canadá <br/>
@@ -46,7 +46,7 @@
                 <label>5- Qual a nacionalidade de Che Guevara? </label><br/>
                 <input type="radio" name="perg1" value="opt1"/> Cubana <br/>
                 <input type="radio" name="perg1" value="opt2"/> Peruana <br/>
-                <input type="radio" name="perg1" value="opt3"/> Panamenha <br/>
+                <input type="radio" name="perg1" value="opt3"/> Argentina <br/>
                 <input type="radio" name="perg1" value="opt4"/> Boliviana <br/>
             </p>
             <p>
@@ -81,7 +81,7 @@
                 <label>10- Qual o número mínimo de jogadores em cada time numa partida de futebol?</label><br/>
                 <input type="radio" name="perg1" value="opt1"/> 8 <br/>
                 <input type="radio" name="perg1" value="opt2"/> 7 <br/>
-                <input type="radio" name="perg1" value="opt3"/> 5 <br/>
+                <input type="radio" name="perg1" value="opt3"/> 11 <br/>
                 <input type="radio" name="perg1" value="opt4"/> 9 <br/>
             </p>
         </article>
