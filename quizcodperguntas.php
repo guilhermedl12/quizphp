@@ -6,6 +6,12 @@ $pergunta[0][1]=array(" Cinco",false);
 $pergunta[0][2]=array(" Sete",false);
 $pergunta[0][3]=array(" Seis",true);
 
+$pergunta[1]['questoes']="2- Qual o menor e o maior país do mundo?";
+$pergunta[1][0]=array(" Vaticano e Rússia",true);
+$pergunta[1][1]=array(" Nauru e China",false);
+$pergunta[1][2]=array(" Mônaco e Canadá",false);
+$pergunta[1][3]=array(" Nauru e Rússia",false);
+
 
 
 $certa=1;
@@ -24,6 +30,9 @@ if (isset($_POST['responder'])) {
         }
     }
 }
+
+
+
 ?>
 
 
@@ -45,6 +54,14 @@ if (isset($_POST['responder'])) {
                 <input type="radio" name="perg1" value="0"/> Seis <br/>
                 <input type="radio" name="perg1" value="1"/> Sete <br/>
                 <input type="radio" name="perg1" value="0"/> Cinco <br/>
+            </p>
+
+            <p>
+                <label><?php echo $pergunta[1]['questoes']?> </label><br/>
+                <input type="radio" name="perg2" value="1"/> Vaticano e Rússia <br/>
+                <input type="radio" name="perg2" value="0"/> Nauru e China <br/>
+                <input type="radio" name="perg2" value="0"/> Mônaco e Canadá <br/>
+                <input type="radio" name="perg2" value="0"/> Nauru e Rússia <br/>
             </p>
     
             <input type="submit" name="responder">
