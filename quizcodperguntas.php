@@ -16,8 +16,11 @@ if (isset($_POST['responder'])) {
     if (isset($_POST["perg1"])) {
         # code...
         $perg1=($_POST['perg1']);
-        if($perg1==0){
+        if($perg1==1){
             echo "acertou";
+        } else{
+            echo "errou";
+
         }
     }
 }
