@@ -86,7 +86,13 @@ if (isset($_POST['responder'])) {
 
 function exibirQuestao($ordem){
     global $pergunta;
-?>
+}
+
+
+    function exibirQuestao($soma){
+        global $pergunta;
+    ?>
+
 
 <p>
     <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/>
