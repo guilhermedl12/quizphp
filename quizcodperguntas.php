@@ -89,10 +89,8 @@ function exibirQuestao($ordem){
 }
 
 
-    function exibirQuestao($soma){
-        global $pergunta;
     ?>
-
+}
 
 <p>
     <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/>
@@ -103,7 +101,6 @@ function exibirQuestao($ordem){
 </p>
 
 <?php
-}
 
 
 ?>
