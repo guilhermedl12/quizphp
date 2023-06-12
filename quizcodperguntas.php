@@ -1,5 +1,7 @@
 <?php 
 
+$numq = 0;
+
 $pergunta[0]['questoes']="1- Quantos continentes existem na Terra?";
 $pergunta[0][0]=array(" Oito",false);
 $pergunta[0][1]=array(" Cinco",false);
@@ -60,13 +62,12 @@ $pergunta[9][1]=array(" 8",false);
 $pergunta[9][2]=array(" 11",false);
 $pergunta[9][3]=array(" 9",false);
 
-
-
-
-
 $certa=1;
 
 if (isset($_POST['responder'])) {
+    if (isset($_POST["numq"])) {
+        $numq = $_POST["numq"] + 1;
+    }
 
     # code...
     $responder=$_POST['responder'];
@@ -83,6 +84,21 @@ if (isset($_POST['responder'])) {
 }
 
 
+function exibirQuestao($ordem){
+    global $pergunta;
+?>
+
+<p>
+    <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/>
+    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?> <br/>
+    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][1][1]?>"/> <?php echo $pergunta[$ordem][1][0]?>  <br/>
+    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][2][1]?>"/> <?php echo $pergunta[$ordem][2][0]?>  <br/>
+    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][3][1]?>"/> <?php echo $pergunta[$ordem][3][0]?>  <br/>
+</p>
+
+<?php
+}
+
 
 ?>
 
@@ -97,80 +113,13 @@ if (isset($_POST['responder'])) {
 </head>
 <body>
     <form method="POST" action="quizcodperguntas.php">
+        <input type="text" name="numq" value="<?php echo $numq; ?>"/>
         <h1>Quiz Conhecimentos Gerais</h1>
         <article>
-            <p>
-                <label><?php echo $pergunta[0]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> Oito <br/>
-                <input type="radio" name="perg" value="1"/> Seis <br/>
-                <input type="radio" name="perg" value="0"/> Sete <br/>
-                <input type="radio" name="perg" value="0"/> Cinco <br/>
-            </p>
 
-            <p>
-                <label><?php echo $pergunta[1]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="1"/> Vaticano e Rússia <br/>
-                <input type="radio" name="perg" value="0"/> Nauru e China <br/>
-                <input type="radio" name="perg" value="0"/> Mônaco e Canadá <br/>
-                <input type="radio" name="perg" value="0"/> Nauru e Rússia <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[2]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> O Senhor dos Anéis <br/>
-                <input type="radio" name="perg" value="1"/>Dom Quixote <br/>
-                <input type="radio" name="perg" value="0"/> O Pequeno Príncipe <br/>
-                <input type="radio" name="perg" value="0"/> Ela, a Feiticeira <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[3]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> 113 <br/>
-                <input type="radio" name="perg" value="0"/> 109 <br/>
-                <input type="radio" name="perg" value="0"/> 108 <br/>
-                <input type="radio" name="perg" value="1"/> 118 <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[4]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> Cubana <br/>
-                <input type="radio" name="perg" value="0"/> Peruana <br/>
-                <input type="radio" name="perg" value="1"/> Argentina <br/>
-                <input type="radio" name="perg" value="0"/> Boliviana <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[5]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> 2.45m e 2,15m <br/>
-                <input type="radio" name="perg" value="0"/> 1,8m e 1,5m <br/>
-                <input type="radio" name="perg" value="1"/> 2,43m e 2,24m <br/>
-                <input type="radio" name="perg" value="0"/> 2,4m para ambos <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[6]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> Rutherford-Bohr, Rutherford, Thomson, Dalton <br/>
-                <input type="radio" name="perg" value="1"/> Dalton, Thomson, Rutherford, Rutherford-Bohr <br/>
-                <input type="radio" name="perg" value="0"/> Dalton, Rutherford-Bohr, Thomson, Rutherford <br/>
-                <input type="radio" name="perg" value="0"/> Thomson, Dalton, Rutherford, Rutherford-Bohr <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[7]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="1"/> Paleolítico <br/>
-                <input type="radio" name="perg" value="0"/> Idade dos Metais <br/>
-                <input type="radio" name="perg" value="0"/> Período da Pedra Polida <br/>
-                <input type="radio" name="perg" value="0"/> Idade Média <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[8]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> Pico Paraná <br/>
-                <input type="radio" name="perg" value="0"/> Monte Roraima <br/>
-                <input type="radio" name="perg" value="0"/> Pico Maior de Friburgo <br/>
-                <input type="radio" name="perg" value="1"/> Pico da Neblina <br/>
-            </p>
-            <p>
-                <label><?php echo $pergunta[9]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="1"/> 7<br/>
-                <input type="radio" name="perg" value="0"/> 8 <br/>
-                <input type="radio" name="perg" value="0"/> 11 <br/>
-                <input type="radio" name="perg" value="0"/> 9 <br/>
-            </p>
-            <input type="submit" name="responder">
+    <?php exibirQuestao($numq) ?>
+    
+            <input type="submit" name="responder" value="Responder">
         </article>
     </form>
 </body>
