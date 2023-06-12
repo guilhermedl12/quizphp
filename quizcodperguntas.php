@@ -12,17 +12,23 @@ $pergunta[1][1]=array(" Nauru e China",false);
 $pergunta[1][2]=array(" Mônaco e Canadá",false);
 $pergunta[1][3]=array(" Nauru e Rússia",false);
 
+$pergunta[2]['questoes']="3- Qual o menor e o maior país do mundo?";
+$pergunta[2][0]=array(" Cubana",false);
+$pergunta[2][1]=array(" Peruana",false);
+$pergunta[2][2]=array(" Argentina",true);
+$pergunta[2][3]=array(" Boliviana",false);
 
 
 $certa=1;
 
 if (isset($_POST['responder'])) {
+
     # code...
     $responder=$_POST['responder'];
-    if (isset($_POST["perg1"])) {
+    if (isset($_POST["perg"])) {
         # code...
-        $perg1=($_POST['perg1']);
-        if($perg1==1){
+        $perg=($_POST['perg']);
+        if($perg==1){
             echo "acertou";
         } else{
             echo "errou";
@@ -50,20 +56,26 @@ if (isset($_POST['responder'])) {
         <article>
             <p>
                 <label><?php echo $pergunta[0]['questoes']?> </label><br/>
-                <input type="radio" name="perg1" value="0"/> Oito <br/>
-                <input type="radio" name="perg1" value="0"/> Seis <br/>
-                <input type="radio" name="perg1" value="1"/> Sete <br/>
-                <input type="radio" name="perg1" value="0"/> Cinco <br/>
+                <input type="radio" name="perg" value="0"/> Oito <br/>
+                <input type="radio" name="perg" value="1"/> Seis <br/>
+                <input type="radio" name="perg" value="0"/> Sete <br/>
+                <input type="radio" name="perg" value="0"/> Cinco <br/>
             </p>
 
             <p>
                 <label><?php echo $pergunta[1]['questoes']?> </label><br/>
-                <input type="radio" name="perg2" value="1"/> Vaticano e Rússia <br/>
-                <input type="radio" name="perg2" value="0"/> Nauru e China <br/>
-                <input type="radio" name="perg2" value="0"/> Mônaco e Canadá <br/>
-                <input type="radio" name="perg2" value="0"/> Nauru e Rússia <br/>
+                <input type="radio" name="perg" value="1"/> Vaticano e Rússia <br/>
+                <input type="radio" name="perg" value="0"/> Nauru e China <br/>
+                <input type="radio" name="perg" value="0"/> Mônaco e Canadá <br/>
+                <input type="radio" name="perg" value="0"/> Nauru e Rússia <br/>
             </p>
-    
+            <p>
+                <label><?php echo $pergunta[2]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="0"/> Cubana<br/>
+                <input type="radio" name="perg" value="0"/>Peruana <br/>
+                <input type="radio" name="perg" value="1"/> Argentina <br/>
+                <input type="radio" name="perg" value="0"/> Boliviana <br/>
+            </p>
             <input type="submit" name="responder">
         </article>
     </form>
