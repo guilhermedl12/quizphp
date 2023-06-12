@@ -55,8 +55,8 @@ $pergunta[8][2]=array(" Pico Maior de Friburgo",false);
 $pergunta[8][3]=array(" Pico da Neblina",true);
 
 $pergunta[9]['questoes']="10- Qual o número mínimo de jogadores em cada time numa partida de futebol?";
-$pergunta[9][0]=array(" 8",false);
-$pergunta[9][1]=array(" 7",true);
+$pergunta[9][0]=array(" 7",true);
+$pergunta[9][1]=array(" 8",false);
 $pergunta[9][2]=array(" 11",false);
 $pergunta[9][3]=array(" 9",false);
 
@@ -116,10 +116,59 @@ if (isset($_POST['responder'])) {
             </p>
             <p>
                 <label><?php echo $pergunta[2]['questoes']?> </label><br/>
-                <input type="radio" name="perg" value="0"/> O Senhor dos Anéis<br/>
+                <input type="radio" name="perg" value="0"/> O Senhor dos Anéis <br/>
                 <input type="radio" name="perg" value="1"/>Dom Quixote <br/>
                 <input type="radio" name="perg" value="0"/> O Pequeno Príncipe <br/>
                 <input type="radio" name="perg" value="0"/> Ela, a Feiticeira <br/>
+            </p>
+            <p>
+                <label><?php echo $pergunta[3]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="0"/> 113 <br/>
+                <input type="radio" name="perg" value="0"/> 109 <br/>
+                <input type="radio" name="perg" value="0"/> 108 <br/>
+                <input type="radio" name="perg" value="1"/> 118 <br/>
+            </p>
+            <p>
+                <label><?php echo $pergunta[4]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="0"/> Cubana <br/>
+                <input type="radio" name="perg" value="0"/> Peruana <br/>
+                <input type="radio" name="perg" value="1"/> Argentina <br/>
+                <input type="radio" name="perg" value="0"/> Boliviana <br/>
+            </p>
+            <p>
+                <label><?php echo $pergunta[5]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="0"/> 2.45m e 2,15m <br/>
+                <input type="radio" name="perg" value="0"/> 1,8m e 1,5m <br/>
+                <input type="radio" name="perg" value="1"/> 2,43m e 2,24m <br/>
+                <input type="radio" name="perg" value="0"/> 2,4m para ambos <br/>
+            </p>
+            <p>
+                <label><?php echo $pergunta[6]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="0"/> Rutherford-Bohr, Rutherford, Thomson, Dalton <br/>
+                <input type="radio" name="perg" value="1"/> Dalton, Thomson, Rutherford, Rutherford-Bohr <br/>
+                <input type="radio" name="perg" value="0"/> Dalton, Rutherford-Bohr, Thomson, Rutherford <br/>
+                <input type="radio" name="perg" value="0"/> Thomson, Dalton, Rutherford, Rutherford-Bohr <br/>
+            </p>
+            <p>
+                <label><?php echo $pergunta[7]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="1"/> Paleolítico <br/>
+                <input type="radio" name="perg" value="0"/> Idade dos Metais <br/>
+                <input type="radio" name="perg" value="0"/> Período da Pedra Polida <br/>
+                <input type="radio" name="perg" value="0"/> Idade Média <br/>
+            </p>
+            <p>
+                <label><?php echo $pergunta[8]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="0"/> Pico Paraná <br/>
+                <input type="radio" name="perg" value="0"/> Monte Roraima <br/>
+                <input type="radio" name="perg" value="0"/> Pico Maior de Friburgo <br/>
+                <input type="radio" name="perg" value="1"/> Pico da Neblina <br/>
+            </p>
+            <p>
+                <label><?php echo $pergunta[9]['questoes']?> </label><br/>
+                <input type="radio" name="perg" value="1"/> 7<br/>
+                <input type="radio" name="perg" value="0"/> 8 <br/>
+                <input type="radio" name="perg" value="0"/> 11 <br/>
+                <input type="radio" name="perg" value="0"/> 9 <br/>
             </p>
             <input type="submit" name="responder">
         </article>
