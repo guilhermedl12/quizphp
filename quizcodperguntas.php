@@ -86,12 +86,7 @@ if (isset($_POST['responder'])) {
 
 function exibirQuestao($ordem){
     global $pergunta;
-}
-
-
     ?>
-}
-
 <p>
     <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?> <br/>
@@ -102,7 +97,7 @@ function exibirQuestao($ordem){
 
 <?php
 
-
+}
 ?>
 
 
