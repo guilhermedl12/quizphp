@@ -54,7 +54,7 @@
     <h2>Digite um nome</h2>
     <input type="text" id="nome" placeholder="Nome">
     <br><br>
-    <a href=""><button> Começar</button></a> 
+    <a href="quizcodperguntas.php"><button> Começar</button></a> 
     </div>
     
 </body>
