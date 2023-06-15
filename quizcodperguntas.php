@@ -89,7 +89,7 @@ function exibirQuestao($ordem){
     ?>
 <p>
     <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/><br/>
-    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?> <br/>
+    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?>  <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][1][1]?>"/> <?php echo $pergunta[$ordem][1][0]?>  <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][2][1]?>"/> <?php echo $pergunta[$ordem][2][0]?>  <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][3][1]?>"/> <?php echo $pergunta[$ordem][3][0]?>  <br/>
