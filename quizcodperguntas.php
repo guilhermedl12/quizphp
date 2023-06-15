@@ -108,7 +108,19 @@ function exibirQuestao($ordem){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="quiz.css"  />
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="h1">
     <title>QUIZ</title>
 </head>
 <body>
@@ -123,4 +135,5 @@ function exibirQuestao($ordem){
         </article>
     </form>
 </body>
+</div>
 </html>
