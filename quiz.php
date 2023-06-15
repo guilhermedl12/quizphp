@@ -46,12 +46,19 @@
         button:hover{
            background-color:deepskyblue;
         }
+        .h2 {
+    text-align: center;
+            }
+        .h4 {
+            text-align: center;
+            }
         </style>
 </head>
 <body>
     <div>
-    <h1>Vamos jogar?</h1>
-    <h2>Digite um nome</h2>
+    <h1>CONHECIMENTOS GERAIS</h1>
+    <h2>Vamos jogar?</h2>
+    <h4>Digite um nome</h4>
     <input type="text" id="nome" placeholder="Nome">
     <br><br>
     <a href="quizcodperguntas.php"><button> Começar</button></a> 

@@ -124,7 +124,6 @@ function exibirQuestao($ordem){
 <body>
     <form method="POST" action="quizcodperguntas.php">
         <input type="text" name="numq" value="<?php echo $numq; ?>"/>
-        <h1>Quiz Conhecimentos Gerais</h1>
         <article>
 
     <?php exibirQuestao($numq) ?>
