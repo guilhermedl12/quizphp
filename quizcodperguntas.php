@@ -88,7 +88,7 @@ function exibirQuestao($ordem){
     global $pergunta;
     ?>
 <p>
-    <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/>
+    <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/><br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?> <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][1][1]?>"/> <?php echo $pergunta[$ordem][1][0]?>  <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][2][1]?>"/> <?php echo $pergunta[$ordem][2][0]?>  <br/>
@@ -108,8 +108,6 @@ function exibirQuestao($ordem){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="quiz.css"  />
-    <br>
-    <br>
     <br>
     <br>
     <br>

@@ -1,25 +1,35 @@
-body{
+body {
     text-align: center;
     padding: 15px;
     margin-top: 8px;
-    background-color: darkgoldenrod; 
-    border-radius:15px;
-    color:white;
-        display: block;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #ffff;
-        cursor: pointer;
+    background: url("quiz-20230612T185443Z-001/quiz/imagens/fundo2.jpeg");
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffff;
+    cursor: default;
 }
-    .h1{
-            background-color:black; 
-            border:10px solid black; 
-            padding: 5px;
-            padding:70px;
-            border-radius:15px;
-            width:700px;
-            }
-            
-           
-    
+
+input {
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.h1 {
+    background-color: black;
+    border: 10px solid black;
+    padding: 70px;
+    border-radius: 15px;
+    width: 700px;
+    margin-left: 480px;
+    font-size: 18px;
+}
