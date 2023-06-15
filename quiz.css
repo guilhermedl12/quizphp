@@ -15,7 +15,7 @@ body {
 }
 
 input {
-    background-color: dodgerblue;
+    background-color: rgba(219, 161, 35, 0.993);
     border: none;
     padding: 14px;
     width: 25%;
