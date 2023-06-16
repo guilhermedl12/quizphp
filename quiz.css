@@ -2,7 +2,7 @@ body {
     text-align: center;
     padding: 15px;
     margin-top: 8px;
-    background: url("quiz-20230612T185443Z-001/quiz/imagens/fundo2.jpeg");
+    background: url("imagens/fundo2.jpeg");
     background-size: cover;
     border-radius: 15px;
     color: white;
@@ -34,4 +34,5 @@ input {
     width: 700px;
     margin-left: 480px;
     font-size: 25px;
+    align-items: center;
 }
