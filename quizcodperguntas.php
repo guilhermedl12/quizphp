@@ -47,13 +47,13 @@ $pergunta[6][3]=array(" Thomson, Dalton, Rutherford, Rutherford-Bohr",false);
 $pergunta[7]['questoes']="8- Em que período da pré-história o fogo foi descoberto?";
 $pergunta[7][0]=array(" Paleolítico",true);
 $pergunta[7][1]=array(" Idade dos Metais",false);
-$pergunta[7][2]=array(" Período da Pedra Polida",false);
+$pergunta[7][2]=array(" Período Jurássico",false);
 $pergunta[7][3]=array(" Idade Média",false);
 
 $pergunta[8]['questoes']="9- Qual a montanha mais alta do Brasil?";
 $pergunta[8][0]=array(" Pico Paraná",false);
 $pergunta[8][1]=array(" Monte Roraima",false);
-$pergunta[8][2]=array(" Pico Maior de Friburgo",false);
+$pergunta[8][2]=array(" Pico do Cabugi",false);
 $pergunta[8][3]=array(" Pico da Neblina",true);
 
 $pergunta[9]['questoes']="10- Qual o número mínimo de jogadores em cada time numa partida de futebol?";
@@ -87,12 +87,15 @@ if (isset($_POST['responder'])) {
 function exibirQuestao($ordem){
     global $pergunta;
     ?>
-<p>
+<p class="gui">
     <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/><br/>
+
+    <div class="cat">
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?>  <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][1][1]?>"/> <?php echo $pergunta[$ordem][1][0]?>  <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][2][1]?>"/> <?php echo $pergunta[$ordem][2][0]?>  <br/>
     <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][3][1]?>"/> <?php echo $pergunta[$ordem][3][0]?>  <br/>
+    </div>
 </p>
 
 <?php
@@ -118,7 +121,7 @@ function exibirQuestao($ordem){
     <br>
     <br>
     <br>
-<div class="h1">
+<center><div class="h1">
     <title>QUIZ</title>
 </head>
 <body>
@@ -128,9 +131,9 @@ function exibirQuestao($ordem){
 
     <?php exibirQuestao($numq) ?>
     
-            <input type="submit" name="responder" value="Responder">
+            <center><input type="submit" name="responder" value="Responder"></center>
         </article>
     </form>
 </body>
-</div>
+</div></center>
 </html>

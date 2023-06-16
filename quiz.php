@@ -33,6 +33,8 @@
             padding:15px;
             border:none;
             outline:none;
+            width: 500px;
+            border-radius: 10px;
         }
         button{
             background-color: dodgerblue;
@@ -56,9 +58,9 @@
 </head>
 <body>
     <div>
-    <h1>CONHECIMENTOS GERAIS</h1>
-    <h2>Vamos jogar?</h2>
-    <h4>Digite um nome</h4>
+    <center><h1>CONHECIMENTOS GERAIS</h1></center>
+    <center><h2>Vamos jogar?</h2></center>
+    <h4>Digite um nome:</h4>
     <input type="text" id="nome" placeholder="Nome">
     <br><br>
     <a href="quizcodperguntas.php"><button> Começar</button></a> 
