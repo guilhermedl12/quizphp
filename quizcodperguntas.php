@@ -131,7 +131,7 @@ function exibirQuestao($ordem){
 
     <?php exibirQuestao($numq) ?>
     
-            <center><input type="submit" name="responder" value="Responder"></center>
+            <input type="submit" name="responder" value="Responder">
         </article>
     </form>
 </body>
