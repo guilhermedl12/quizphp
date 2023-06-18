@@ -68,7 +68,7 @@ if (isset($_POST['responder'])) {
     if (isset($_POST["numq"])) {
         $numq = $_POST["numq"] + 1;
     }
-
+    
     # code...
     $responder=$_POST['responder'];
     if (isset($_POST["perg"])) {
@@ -78,28 +78,45 @@ if (isset($_POST['responder'])) {
             echo "acertou";
         } else{
             echo "errou";
-
+            
         }
+    }
+}
+if (isset($_POST['recomecar'])) {
+    if (isset($_POST["recomecar"])) {
+            $numq = $_POST["recomecar"];
     }
 }
 
 
 function exibirQuestao($ordem){
     global $pergunta;
-    ?>
-<p class="gui">
-    <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/><br/>
+    
+    if ($ordem<10) {
+        
+        ?>
+    <p class="gui">
+        <label><?php echo $pergunta[$ordem]['questoes']?> </label><br/><br/>
 
-    <div class="cat">
-    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?>  <br/>
-    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][1][1]?>"/> <?php echo $pergunta[$ordem][1][0]?>  <br/>
-    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][2][1]?>"/> <?php echo $pergunta[$ordem][2][0]?>  <br/>
-    <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][3][1]?>"/> <?php echo $pergunta[$ordem][3][0]?>  <br/>
-    </div>
-</p>
+        <div class="cat">
+        <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][0][1]?>"/> <?php echo $pergunta[$ordem][0][0]?>  <br/>
+        <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][1][1]?>"/> <?php echo $pergunta[$ordem][1][0]?>  <br/>
+        <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][2][1]?>"/> <?php echo $pergunta[$ordem][2][0]?>  <br/>
+        <input type="radio" name="perg" value="<?php echo $pergunta[$ordem][3][1]?>"/> <?php echo $pergunta[$ordem][3][0]?>  <br/>
+        </div>
+        </p>
+        <input type="submit" name="responder" value="Responder">
 
 <?php
+    }else{
+?>
+    <p>Página final</p>
+    <input type="text" name="recomecar" hidden value="0">
+    <input type="submit" name="recomecarbt" value="Finalizar">
 
+<?php 
+    }
+    
 }
 ?>
 
@@ -129,9 +146,8 @@ function exibirQuestao($ordem){
         <input type="text" name="numq" value="<?php echo $numq; ?>"/>
         <article>
 
-    <?php exibirQuestao($numq) ?>
+            <?php exibirQuestao($numq) ?>
     
-            <input type="submit" name="responder" value="Responder">
         </article>
     </form>
 </body>
