@@ -30,6 +30,7 @@
             color:white;
         }
         input{
+            
             padding:15px;
             border:none;
             outline:none;
@@ -37,7 +38,7 @@
             border-radius: 10px;
         }
         button{
-            background-color: dodgerblue;
+            background-color: rgba(219, 161, 35, 0.993);
             border:none;
             padding: 15px;
             width: 100%;
@@ -58,8 +59,9 @@
 </head>
 <body>
     <div>
-    <center><h1>CONHECIMENTOS GERAIS</h1></center>
-    <center><h2>Vamos jogar?</h2></center>
+    <center><h1>QUIZ</h1></center>
+    <center><h2>CONHECIMENTOS GERAIS</h2></center>
+    <center><h3>Vamos jogar?</h3></center>
     <h4>Digite um nome:</h4>
     <input type="text" id="nome" placeholder="Nome">
     <br><br>
