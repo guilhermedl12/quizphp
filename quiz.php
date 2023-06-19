@@ -103,7 +103,7 @@
         <div class="container">
             <ul>
                 <p>
-                    Trabalho para disciplina de Programação pra Internet <br>
+                    Projeto P/ Disciplina de Programação pra Internet <br>
                     Professor: Eberton Marinho <br>
                     Unidade 1
                 </p>
