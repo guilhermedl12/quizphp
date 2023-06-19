@@ -37,7 +37,7 @@
             display:flex;
             min-height:100vh;
             flex-direction:column;
-            font-family: 'times new roman';
+            font-family: 'verdana';
             background: url("imagens/fundo2.jpeg");
             background-size: cover;
         }
