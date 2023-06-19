@@ -1,6 +1,8 @@
 <?php 
 
 $numq = 0;
+$placar = 0;
+
 
 $pergunta[0]['questoes']="1- Quantos continentes existem na Terra?";
 $pergunta[0][0]=array(" Oito",false);
@@ -74,13 +76,18 @@ if (isset($_POST['responder'])) {
     if (isset($_POST["perg"])) {
         # code...
         $perg=($_POST['perg']);
+        $placar = ($_POST['placar']);
         if($perg==1){
             echo "acertou";
+            $placar = $_POST["placar"] + 10;
         } else{
             echo "errou";
             
         }
+        
     }
+
+
 }
 if (isset($_POST['recomecar'])) {
     if (isset($_POST["recomecar"])) {
@@ -90,7 +97,7 @@ if (isset($_POST['recomecar'])) {
 
 
 function exibirQuestao($ordem){
-    global $pergunta;
+    global $pergunta,$placar;
     
     if ($ordem<10) {
         
@@ -110,7 +117,7 @@ function exibirQuestao($ordem){
 <?php
     }else{
 ?>
-    <p>Página final</p>
+    <p>PONTUAÇÃO</p>
     <input type="text" name="recomecar" hidden value="0">
     <input type="submit" name="recomecarbt" value="Finalizar">
 
@@ -120,7 +127,14 @@ function exibirQuestao($ordem){
 }
 ?>
 
+<?php
+      function exibirPlacar($placar){
+        global $placar;
+?>
 
+<?php
+      }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,12 +156,15 @@ function exibirQuestao($ordem){
     <title>QUIZ</title>
 </head>
 <body>
+
     <form method="POST" action="quizcodperguntas.php">
-        <input type="text" name="numq" value="<?php echo $numq; ?>"/>
+        <input type="text" name="numq" hidden value="<?php echo $numq; ?>"/>
         <article>
 
             <?php exibirQuestao($numq) ?>
-    
+
+            <input type="text" name="placar"  value="<?php echo $placar ?>"/>
+
         </article>
     </form>
 </body>
