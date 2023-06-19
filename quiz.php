@@ -94,7 +94,7 @@
         <center><h2>CONHECIMENTOS GERAIS</h2></center>
         <center><h3>Vamos jogar?</h3></center>
         <h4>Digite um nome:</h4>
-        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="nome" placeholder="Nome" autocomplete="off">
         <br><br>
         <a href="quizcodperguntas.php"><button> Começar</button></a>
     </article>
